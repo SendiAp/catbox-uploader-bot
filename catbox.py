@@ -7,15 +7,10 @@ from config import Config
 
 
 bot = Client(
-
     "bot",
-
     api_id=Config.API_ID,
-
     api_hash=Config.API_HASH,
-
     bot_token=Config.BOT_TOKEN
-
 )
 
 
@@ -60,102 +55,49 @@ ERROR_BUTTON = InlineKeyboardMarkup(
 
 )
 
-
-
-
-
 @bot.on_message(filters.command("start") & filters.private)
-
 async def start(bot, message):
-
     text = f"Hello {message.from_user.first_name}!\n\nWelcome to the Telegraph uploader bot.\nYou can send me any " \
-
            f"image, video, animation and I will upload it to telegraph and send you a generated link. But the file must be LESS THAN 5MB!!\n\n" \
-
            f"<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>"
-
     reply_markup = INLINE_SELECT
-
     await message.reply(
-
         text=text,
-
         reply_markup=reply_markup,
-
         disable_web_page_preview=True)
 
-
-
-
-
 ## UPLOAD PHOTOS
-
-
+uploader = CatboxUploader()
 
 @bot.on_message(filters.photo & filters.private)
-
 async def photo_upload(bot, message):
-
     msg = await message.reply("Uploading", quote=True)
-
-    download_path = await bot.download_media(
-
-        message=message, file_name="image/jetg"
-
-    )
-
+    download_path = await bot.download_media(message)
     try:
-
-        link = upload_file(download_path)
-
-        generated_link = "https://telegra.ph" + "".join(link)
-
-
-
+        link = uploader.upload_file(download_path)
         IN_BUTTON = InlineKeyboardMarkup(
-
             [
-
                 [
-
-                    InlineKeyboardButton("Github🤩", url="https://github.com/sanila2007"),
-
-                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/sanilaassistant_bot")
-
+                    InlineKeyboardButton("Github🤩", url="https://github.com/catbox-uploader-bot"),
+                    InlineKeyboardButton("Report Bugs🤖", url="https://t.me/pikyus7")
                 ],
-
                 [
-
-                    InlineKeyboardButton("Web Preview🌐", url=generated_link)
-
+                    InlineKeyboardButton("Web Preview🌐", urlf"{link}")
                 ]
-
             ]
 
         )
-
     except:
-
         await msg.edit_text(
-
             "File must be less than 5mb, please try another file or <a href=https://t.me/sanilaassistant_bot>LEARN THIS BOT FIRST!</a>",
-
             disable_web_page_preview=True, reply_markup=ERROR_BUTTON)
-
     else:
-
         t = await msg.edit_text(generated_link, disable_web_page_preview=True)
-
         await t.edit_text(
-
             f"Link - `{generated_link} `\n\n<a href=https://t.me/sanilaassistant_bot>Feel free to leave a feedback</a>",
-
             reply_markup=IN_BUTTON,
-
             disable_web_page_preview=True)
-
     finally:
-
         os.remove(download_path)
 
 
