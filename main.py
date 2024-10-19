@@ -11,6 +11,17 @@ bot = Client(
     bot_token=Config.BOT_TOKEN
 )
 
+INLINE_SELECT = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("Github🤩", url="https://github.com/SendiAp/catbox-uploader-bot"),
+            InlineKeyboardButton("Report Bugs🤖", url="https://t.me/pikyus7")
+        ],
+        [
+            InlineKeyboardButton("Join Channel🌐", url="https://t.me/PTSMProject")
+        ]
+    ]
+)
 
 ERROR_BUTTON = InlineKeyboardMarkup(
     [
