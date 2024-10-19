@@ -39,11 +39,11 @@ async def photo_upload(bot, message):
 
         )
     except CatboxError as e:
-        await msg.edit_text(f"`{e}`", disable_web_page_preview=True, reply_markup=ERROR_BUTTON)
+        return await msg.edit_text(f"`{e}`", disable_web_page_preview=True, reply_markup=ERROR_BUTTON)
     else:
         t = await msg.edit_text(link, disable_web_page_preview=True)
-        await t.edit_text(
-            f"Link - `{link} `\n\n<a href=https://t.me/pikyus7>Feel free to leave a feedback</a>",
+        return await t.edit_text(
+            f"Link - `{link} `\n\n© Catbox Uploader",
             reply_markup=IN_BUTTON,
             disable_web_page_preview=True)
     finally:
