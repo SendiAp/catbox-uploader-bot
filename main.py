@@ -33,7 +33,7 @@ async def photo_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Link Preview", urlf"{link}")
+                    InlineKeyboardButton("Link Preview", url=f"{link}")
                 ]
             ]
 
@@ -59,7 +59,7 @@ async def video_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Link Preview", urlf"{link}")
+                    InlineKeyboardButton("Link Preview", url=f"{link}")
                 ]
             ]
 
@@ -85,7 +85,7 @@ async def animation_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Link Preview", urlf"{link}")
+                    InlineKeyboardButton("Link Preview", url=f"{link}")
                 ]
             ]
 
@@ -111,7 +111,7 @@ async def sticker_upload(bot, message):
         IN_BUTTON = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Link Preview", urlf"{link}")
+                    InlineKeyboardButton("Link Preview", url=f"{link}")
                 ]
             ]
 
