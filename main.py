@@ -21,6 +21,17 @@ ERROR_BUTTON = InlineKeyboardMarkup(
     ]
 )
 
+@bot.on_message(filters.command("start") & filters.private)
+async def start(bot, message):
+    text = f"Hello {message.from_user.first_name}!\n\nSelamat datang di bot pengunggah catbox.\nAnda dapat mengirimi saya apa pun " \
+           f"image, video, animation dan saya akan mengunggahnya ke catbox dan mengirimkan tautan yang dibuat. Namun, file tersebut harus berukuran KURANG DARI 5MB!!\n\n" \
+           f"<a href=https://t.me/PTSNProject>Bebas meninggalkan umpan balik</a>"
+    reply_markup = INLINE_SELECT
+    await message.reply(
+        text=text,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True)
+
 ## UPLOAD PHOTOS
 uploader = CatboxUploader()
 
