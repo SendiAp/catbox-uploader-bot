@@ -1,6 +1,6 @@
 <h1 align= left>Catbox Uploader</h1>
 
-> Telegram bot that can upload videos, images and animations to the telegra.ph
+> Telegram bot that can upload videos, images and animations to the catbox
 ----
 
     
