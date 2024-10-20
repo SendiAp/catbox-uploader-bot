@@ -47,7 +47,7 @@ If any errors you should fix it yourself!!</pre>
  • <a href="https://github.com/SendiAp">SendiAp</a> <br>
  • <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a> 
   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/sanila2007/feedback-bot)   
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/SendiAp)   
 
 > Made with 💞 by <a href="https://github.com/SendiAp">pikyus7</a> 
    
