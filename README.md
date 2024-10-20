@@ -7,14 +7,14 @@
 <p align="center">
 <a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
 <br>
-    <img src="https://img.shields.io/github/stars/sanila2007/telegraph-uploader-bot?style=for-the-badge" alt="Stars">
-    <img src="https://img.shields.io/github/forks/sanila2007/telegraph-uploader-bot?style=for-the-badge" alt="Forks">
-    <img src="https://img.shields.io/github/watchers/sanila2007/telegraph-uploader-bot?style=for-the-badge" alt="Watchers"> 
+    <img src="https://img.shields.io/github/stars/SendiAp/catbox-uploader-bot?style=for-the-badge" alt="Stars">
+    <img src="https://img.shields.io/github/forks/SendiAp/catbox-uploader-bot?style=for-the-badge" alt="Forks">
+    <img src="https://img.shields.io/github/watchers/SendiAp/catbox-uploader-bot?style=for-the-badge" alt="Watchers"> 
 <br>
-    <img src="https://img.shields.io/github/license/sanila2007/telegraph-uploader-bot?style=for-the-badge" alt="License">
-    <img src="https://img.shields.io/github/repo-size/sanila2007/telegraph-uploader-bot?style=for-the-badge" alt="Repository Size">
-    <img src="https://img.shields.io/github/contributors/sanila2007/telegraph-uploader-bot?style=for-the-badge" alt="Contributors">
-    <img src="https://img.shields.io/github/issues/sanila2007/telegraph-uploader-bot?style=for-the-badge" alt="Issues">
+    <img src="https://img.shields.io/github/license/SendiAp/catbox-uploader-bot?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/github/repo-size/SendiAp/catbox-uploader-bot?style=for-the-badge" alt="Repository Size">
+    <img src="https://img.shields.io/github/contributors/SendiAp/catbox-uploader-bot?style=for-the-badge" alt="Contributors">
+    <img src="https://img.shields.io/github/issues/SendiAp/catbox-uploader-bot?style=for-the-badge" alt="Issues">
 </p>  
 
 
@@ -25,9 +25,9 @@
 
 ## Features of this bot
 
-- Upload images to telegraph
-- Upload videos to telegraph
-- Upload animations to telegraph
+- Upload images to catbox
+- Upload videos to catbox
+- Upload animations to catbox
 - Very fast bot
 - 24/7 works
   
@@ -37,17 +37,6 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SendiAp/catbox-uploader-bot)
  
-## Warning
- ● This is under <b>GNU General Public License v3.0.</b><br><br>
- ● You are free to use this code in any of your projects, but you MUST include the following in your `README.md` (Copy & paste)<br>
-
-```
-## Credits
- 
--[telegraph-uploader-bot] (https://github.com/sanila2007/telegraph-uploader-bot)
-
-```
-
 ## Note: <br>
 
 <pre>I don't officially support forks / Clones for this feedback bot,
@@ -55,10 +44,10 @@ So don't tag admins for errors of your deploy/code,
 If any errors you should fix it yourself!!</pre>
 
 ## Credits: <br>
- • <a href="https://github.com/sanila2007">Sanila Ranatunga</a> <br>
+ • <a href="https://github.com/SendiAp">SendiAp</a> <br>
  • <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a> 
   
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/sanila2007/feedback-bot)   
 
-> Made with 💞 by <a href="https://github.com/sanila2007">@sanila2007</a> 
+> Made with 💞 by <a href="https://github.com/SendiAp">pikyus7</a> 
    
