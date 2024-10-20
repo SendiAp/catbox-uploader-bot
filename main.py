@@ -149,4 +149,6 @@ async def sticker_upload(bot, message):
     finally:
         os.remove(download_path)
 
+print('🔥 [BOT BERHASIL DIAKTIFKAN] 🔥')
+
 bot.run()
