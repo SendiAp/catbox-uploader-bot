@@ -1,3 +1,3 @@
 pyrogram
 tgcrypto
-catbox-uploader
+catbox
